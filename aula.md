@@ -3,7 +3,7 @@
 Maneira de dar instrução ao computador.
 Como um lego, você irá utilizar peças para criar algoritmos, ou seja, para resolver problemas.
 
-  **Algoritmo** : Sequência de passos lógica e finita para resolução de um problema
+**Algoritmo** : Sequência de passos lógica e finita para resolução de um problema
 
 ## Peças de uma linguagem
 
@@ -30,14 +30,14 @@ Como um lego, você irá utilizar peças para criar algoritmos, ou seja, para re
 
 - [x] Strings ( textos ) : **"" '' ``**
 - [x] Number : 2 1.4
-- [x] Bollean : true,  false
+- [x] Bollean : true, false
 
 ## Operadores
 
 - [x] Operadores de atribuição de valor : **=**
 - [x] Operadores de concatenação : **+**
 
-##  Estruturas de dados
+## Estruturas de dados
 
 ### Array
 
@@ -54,3 +54,7 @@ Como um lego, você irá utilizar peças para criar algoritmos, ou seja, para re
 - [x] criar, passar argumento
 - [x] executar
 - [x] arrow function / named function
+
+# Estrutura de repetição
+
+- [x] while
