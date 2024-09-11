@@ -36,6 +36,7 @@ Como um lego, você irá utilizar peças para criar algoritmos, ou seja, para re
 
 - [x] Operadores de atribuição de valor : **=**
 - [x] Operadores de concatenação : **+**
+- [x] Operadores de comparação : **==** ; **!=** ; **>** ; **>=** ; **<** ; **<=**
 
 ## Estruturas de dados
 
@@ -58,6 +59,7 @@ Como um lego, você irá utilizar peças para criar algoritmos, ou seja, para re
 ## Estrutura de repetição
 
 - [x] while
+- [x] if/else
 
 ## Condicionais
 
