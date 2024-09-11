@@ -1,4 +1,4 @@
-## Linguagem de programação
+# Linguagem de programação
 
 Maneira de dar instrução ao computador.
 Como um lego, você irá utilizar peças para criar algoritmos, ou seja, para resolver problemas.
@@ -15,7 +15,7 @@ Como um lego, você irá utilizar peças para criar algoritmos, ou seja, para re
 - Controle de fluxo ( if/else )
 - Estrutura de repetição ( for, while )
 
-# Fases da resolução de um problema
+## Fases da resolução de um problema
 
 - Coletar os dados
 - Processar os dados ( manipular, alterar, ... )
@@ -55,10 +55,19 @@ Como um lego, você irá utilizar peças para criar algoritmos, ou seja, para re
 - [x] executar
 - [x] arrow function / named function
 
-# Estrutura de repetição
+## Estrutura de repetição
 
 - [x] while
 
-# Condicionais
+## Condicionais
 
 - [x] switch
+
+## Módulos em Node.js
+
+- [x] Importação de módulos (require, CommonJS)
+- [x] Biblioteca 'inquirer' para criar prompts interativos
+
+## Programação assíncrona e Promises
+
+- [x] Uso de funções assíncronas ( async / await )

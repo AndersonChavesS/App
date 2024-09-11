@@ -6,7 +6,6 @@ const start = async () => {
       message: 'Menu >',
       choices: [
         { name: 'Cadastrar', value: 'cadastrar' },
-        { name: 'Listar metas', value: 'listar' },
         { name: 'Sair', value: 'sair' },
       ],
     });
@@ -19,7 +18,6 @@ const start = async () => {
         console.log('Listando...');
         break;
       case 'sair':
-        console.log('Saindo... Até a próxima!');
         return;
     }
   }
