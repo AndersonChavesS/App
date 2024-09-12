@@ -44,18 +44,34 @@ const listarMetas = async () => {
 };
 
 const MetasRealizadas = async () => {
-  const metasRealizadas = metas.filter((meta) => {
+  const realizadas = metas.filter((meta) => {
     return meta.checked;
   });
 
-  if (metasRealizadas.length === 0) {
+  if (realizadas.length === 0) {
     console.log('Nenhuma meta realizada! =(');
     return;
   }
 
   await select({
-    message: 'Metas Realizadas',
+    message: `${realizadas.length} Metas Realizadas`,
     choices: [...realizadas],
+  });
+};
+
+const MetasAbertas = async () => {
+  const abertas = metas.filter((meta) => {
+    return !meta.checked;
+  });
+
+  if (abertas.length === 0) {
+    console.log('Nenhuma meta aberta! =)');
+    return;
+  }
+
+  await select({
+    message: `${abertas.length} Metas Abertas`,
+    choices: [...abertas],
   });
 };
 
@@ -67,6 +83,7 @@ const start = async () => {
         { name: 'Cadastrar', value: 'cadastrar' },
         { name: 'Listar metas', value: 'listar' },
         { name: 'Metas realizadas', value: 'realizadas' },
+        { name: 'Metas abertas', value: 'abertas' },
         { name: 'Sair', value: 'sair' },
       ],
     });
@@ -81,6 +98,9 @@ const start = async () => {
         break;
       case 'realizadas':
         await MetasRealizadas();
+        break;
+      case 'abertas':
+        await MetasAbertas();
         break;
       case 'sair':
         console.log('Saindo... Até a próxima!');
