@@ -1,8 +1,10 @@
-const { select, input } = require('@inquirer/prompts');
+const { select, input, checkbox } = require('@inquirer/prompts');
+
 let meta = {
   value: 'Tomar 3l de água por dia',
   checked: false,
 };
+
 let metas = [meta];
 
 const cadastrarMeta = async () => {
@@ -12,7 +14,32 @@ const cadastrarMeta = async () => {
     console.log('A meta não pode ser vazia!');
     return;
   }
+
   metas.push({ value: meta, checked: false });
+};
+
+const listarMetas = async () => {
+  const respostas = await checkbox({
+    message:
+      'Utilize as setas para navegar , espaço para selecionar e enter para confirmar',
+    choices: [...metas],
+    instructions: false,
+  });
+  if (respostas.length === 0) {
+    console.log('Nenhuma meta selecionada!');
+    return;
+  }
+
+  metas.forEach((m) => {
+    m.checked = false;
+  });
+
+  respostas.forEach((resposta) => {
+    const meta = metas.find((m) => m.value === resposta);
+    meta.checked = true;
+  });
+
+  console.log('Meta(s) marcada(s) como concluída(s)!');
 };
 
 const start = async () => {
@@ -32,7 +59,7 @@ const start = async () => {
         console.log(metas);
         break;
       case 'listar':
-        console.log('Listando...');
+        await listarMetas();
         break;
       case 'sair':
         console.log('Saindo... Até a próxima!');
