@@ -1,7 +1,11 @@
-- Criar metas
-- Listar metas
+# App
+
+## To do
+
+- [x] Criar metas
+- [x] Listar metas
   - Metas realizadas
   - Metas abertas
-- Marcar/Desmarcar metas realizadas
+- [x] Marcar/Desmarcar metas realizadas
 - Remover metas
 - Sistema de mensagens
